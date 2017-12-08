@@ -146,7 +146,7 @@ damageLogo_five <- function(theta_pool,
 
 
   if(is.null(sig_names))
-    sig_names <- rownames(theta)
+    sig_names <- 1:nrow(theta) #rownames(theta)
 
  # prob_mutation <- filter_by_pos(t(theta_pool), max_pos = max_pos)
   prob_mutation <- filter_signatures_only_location(t(theta_pool),
